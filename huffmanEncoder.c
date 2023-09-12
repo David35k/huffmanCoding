@@ -7,7 +7,17 @@ void checkFreq(char[]);
 int frequencies[100];
 char uniqueLetters[100];
 
-int main()
+typedef struct
+{
+    Node left;
+    Node right;
+    char letter;
+    int frequency;
+    int code;
+} Node;
+
+int
+main()
 {
 
     char string[100];
